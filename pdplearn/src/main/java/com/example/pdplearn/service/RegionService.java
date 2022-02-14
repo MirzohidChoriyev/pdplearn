@@ -6,7 +6,6 @@ import com.example.pdplearn.object.RegionDto;
 import com.example.pdplearn.repository.RegionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.jvm.hotspot.gc.serial.TenuredGeneration;
 
 import java.util.List;
 
@@ -50,9 +49,6 @@ public class RegionService {
     }
 
     public ApiResponse deleteRegionAll() {
-        TenuredGeneration tenuredGeneration;
-        //uyyuiyuiyiuyiiiuysyoy12ody3dlk3
-        Region region = new Region();
         regionRepository.deleteAll();
         return new ApiResponse("deleteall", true);
     }
