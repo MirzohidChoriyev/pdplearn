@@ -8,7 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+<<<<<<< Updated upstream
 import java.util.List;
+=======
+import java.util.Optional;
+>>>>>>> Stashed changes
 
 @Service
 public class DistrictService {
@@ -25,8 +29,14 @@ public class DistrictService {
         return new ApiResponse("saved", true, district);
     }
 
+<<<<<<< Updated upstream
     public ResponseEntity getallDistrict() {
         List<District> districtList = districtRepository.findAll();
         return ResponseEntity.ok(districtList);
+=======
+    public ApiResponse editDistrict(Integer id) {
+        Optional<District> district = districtRepository.findById(id);
+        return new ApiResponse("getone", true, district);
+>>>>>>> Stashed changes
     }
 }

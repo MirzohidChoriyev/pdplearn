@@ -50,7 +50,6 @@ public class RegionService {
 
     public ApiResponse deleteRegionAll() {
         regionRepository.deleteAll();
-        Region region = new Region();
         return new ApiResponse("deleteall", true);
     }
 }
