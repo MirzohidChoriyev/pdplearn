@@ -8,7 +8,10 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK" />
+<<<<<<< HEAD
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>
+=======
+>>>>>>> 4db304e4076fe690b116278b96f56bed2afc6503
 </project>
